@@ -35,6 +35,22 @@ base on **macos**,you can follow those tips.
   
 ### start up the rpc test demo
 
+0 start the zookeeper in localhost
+1 install the rpc-core and simplerpc-spring in local maven resporitory 
+```
+  cd core
+   mvn clean install -Dmaven.test.skip=true 
+  
+  cd spring 
+   mvn clean install -Dmaven.test.skip=true 
+   
+  
+```
+2 strat up the `SpringServerConfig` in `testdemo` package,then start up the `SpringClientConfig`
+
+3 open the url:[localhost:8081/test/hello?say=123](localhost:8081/test/hello?say=123) in your browser ,enjoy 
+
+
   
 
 

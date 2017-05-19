@@ -30,6 +30,9 @@ public class SpringClientConfig {
     @Resource
     private HelloWorld helloWorld;
     @RequestMapping("/hello")
+
+
+
     public String hello(String say) {
         return helloWorld.say(say);
     }
